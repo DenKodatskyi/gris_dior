@@ -156,7 +156,7 @@ ul {
 /* MAIN ===================================================== */
 .about {
   overflow: hidden;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .about__inner {
@@ -164,7 +164,7 @@ ul {
 }
 
 .about__slider {
-  width: 1600px;
+  width: 1800px;
   padding-left: 200px;
   margin-left: -200px;
   padding-bottom: 20px;
@@ -207,6 +207,7 @@ ul {
 
 .about__arrow {
   margin-left: -198px;
+  margin-top: -10px;
 }
 
 .container_arrow .swiper-button-next.swiper-button-disabled,
@@ -230,6 +231,72 @@ ul {
 .about__btn:hover {
   color: #fff;
   background-color: #7449BB;
+}
+
+
+/* ACCORDION ================================================= */
+.accordion {
+  margin-bottom: 225px;
+}
+
+.accordion__inner {
+  padding-left: 200px;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #7449BB;
+  padding: 50px 101px 0 0;
+  position: relative;
+}
+
+.accordion__item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 50px;
+  background-image: url(../svg/arrow_down.svg);
+  background-repeat: no-repeat;
+  right: 85px;
+  top: 50px;
+}
+
+.accordion__item:last-child::before {
+  position: absolute;
+  background-image: url(../img/accordion_img.jpeg);
+  width: 65px;
+  height: 120px;
+  bottom: -73px;
+  left: 270px;
+}
+
+.accordion__item_active .accordion__content {
+  display: block;
+}
+
+.accordion__trigger {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion__trigger_title {
+  text-transform: uppercase;
+  font-size: 24px;
+  flex-basis: 300px;
+  padding-bottom: 42px;
+}
+
+.accordion__trigger_text {
+  flex-basis: 387px;
+  margin-right: 104px;
+  padding-bottom: 20px;
+}
+
+.accordion__content p {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  display: none;
 }
 
 

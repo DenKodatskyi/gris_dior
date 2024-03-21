@@ -29,3 +29,5 @@ const swiperAbout = new Swiper(".about__slider", {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const accordionItemActive = document.querySelector('.accordion__item_active');
