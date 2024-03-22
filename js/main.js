@@ -1,33 +1,9 @@
 /*  */
-const swiperTop = new Swiper('.top__swiper', {
-  // Optional parameters
-  loop: false,
-  effect: "fade",
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const accordionTrigger = document.querySelectorAll('.accordion__trigger');
+
+accordionTrigger.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.parentNode.classList.toggle('accordion__item_active')
+  });
 });
-
-const swiperAbout = new Swiper(".about__slider", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  freeMode: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-const accordionItemActive = document.querySelector('.accordion__item_active');
