@@ -33,6 +33,13 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
@@ -73,7 +80,7 @@ ul {
 
 /* top */
 .top {
-  padding-top: 90px;
+  padding-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -352,6 +359,21 @@ ul {
   font-family: "Playfair Display SC", serif;
   line-height: 1.34;
   font-style: italic;
+}
+
+/* VIDEO =============================================== */
+.video__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  max-width: 997px;
+  min-height: 600px;
+  background-image: url(../img/video_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 150px;
 }
 
 
