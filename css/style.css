@@ -214,7 +214,7 @@ button {
 
 .about__arrow {
   margin-left: -198px;
-  margin-top: -10px;
+  margin-top: 30px;
 }
 
 .container_arrow .swiper-button-next.swiper-button-disabled,
@@ -263,6 +263,7 @@ button {
   height: 50px;
   background-image: url(../svg/arrow_down.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   right: 85px;
   top: 50px;
 }
@@ -285,6 +286,11 @@ button {
   justify-content: space-between;
   cursor: pointer;
   padding-top: 50px;
+}
+
+.accordion__trigger:hover {
+  background-color: #c9b5eb;
+  transition: 1s ease;
 }
 
 .accordion__trigger_title {
@@ -378,3 +384,85 @@ button {
 
 
 /* FOOTER ===================================================== */
+.footer {
+  background-color: #C4A9CD;
+  padding: 66px 100px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.footer__logo {
+  margin-right: 10px;
+}
+
+.footer__items {
+  flex-basis: 387px;
+}
+
+.footer__item+.footer__item {
+  margin-top: 70px;
+}
+
+.footer__item_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer__item_list li {
+  padding-top: 10px;
+}
+
+.footer__item_form {
+  position: relative;
+}
+
+.footer__item_input {
+  display: block;
+  width: 100%;
+  padding: 10px 60px 10px 0;
+  border: none;
+  border-bottom: 1px solid #1B1B1B;
+  background-color: #C4A9CD;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.footer__item_input::placeholder {
+  opacity: .6;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.footer__item_btn {
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+
+.footer__social_list {
+  margin-left: 10px;
+  align-self: flex-end;
+  margin-right: 80px;
+}
+
+.footer__social_item {
+  margin-top: 20px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+.footer__nav_list {
+  display: flex;
+  gap: 0 20px
+}
