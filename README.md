@@ -10,3 +10,4 @@ The project was completed by: Den Kodatskyi ( © KonadskyDEN )
 - swiper slider  
 - JavaScript 
 - Pixsa app
+- adaptive
