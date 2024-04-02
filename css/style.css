@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #7449BB;
+}
+
 ul {
   list-style: none;
 }
@@ -142,6 +146,7 @@ button {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: 'none';
+  margin-left: -15px;
 }
 
 .container_arrow {
@@ -268,12 +273,13 @@ button {
   top: 50px;
 }
 
-.accordion__item:last-child::before {
+.accordion__item:last-child::after {
+  content: '';
   position: absolute;
   background-image: url(../img/accordion_img.jpeg);
   width: 65px;
   height: 120px;
-  bottom: -73px;
+  bottom: -110px;
   left: 270px;
 }
 
